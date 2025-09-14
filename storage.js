@@ -29,7 +29,7 @@ function _save(state) {
   localStorage.setItem(POC_KEY, JSON.stringify(state));
 }
 
-export const storage = {
+const storage = {
   getState() {
     return _load();
   },
